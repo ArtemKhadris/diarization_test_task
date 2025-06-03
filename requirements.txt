@@ -1,0 +1,10 @@
+torch
+librosa
+pydub
+openai-whisper
+faster-whisper
+noisereduce
+scipy
+numpy
+pyannote.audio
+resemblyzer
