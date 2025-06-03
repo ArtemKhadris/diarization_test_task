@@ -114,6 +114,8 @@ To launch these files, you need to create an environment. Python version `3.10.6
 
 In addition, you need to agree to the terms of use https://huggingface.co/pyannote/speaker-diarization-3.1 and https://huggingface.co/pyannote/segmentation-3.0 (both of these packages are necessary for the code to work). After these conditions are met, the code should work correctly.
 
+A complete list of all installed packages in the environment is in the `requirements1.txt` file (in case any updates are released and version conflicts occur).
+
 ## Results
 The results of the run_preprocessing.py and run_transcribe.py scripts will be saved to the specified path, the results of the diarize_audio.py script will be saved to the root folder of the project.
 
