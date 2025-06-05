@@ -116,6 +116,10 @@ In addition, you need to agree to the terms of use https://huggingface.co/pyanno
 
 A complete list of all installed packages in the environment is in the `requirements1.txt` file (in case any updates are released and version conflicts occur).
 
+### There is also the possibility of using UI (gradio).
+The first step is to get a token with HF (specified above) and replace the variable responsible for storing it in the code (`ui.py`) `HF_TOKEN = "your_huggingface_token"`.
+When running the `ui.py` file, you need to open the page `http://127.0.0.1:7860/` in the browser, there will be 3 tabs: audio preprocessing, regular transcription and diarization. Some settings can be changed in the UI, the files with the results will be saved in the project folder, but you can also save them in another place.
+
 ## Results
 The results of the run_preprocessing.py and run_transcribe.py scripts will be saved to the specified path, the results of the diarize_audio.py script will be saved to the root folder of the project.
 
