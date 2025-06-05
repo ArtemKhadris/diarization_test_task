@@ -69,11 +69,11 @@ class AudioTranscriber:
             print("--------------Audio transcription in progress...")
             whisper_result = self.whisper_model.transcribe(
                 audio_path,
-                language="ru",
-                fp16=False,
-                word_timestamps=True,
-                beam_size=5,
-                temperature=0.0
+                language = "ru",
+                fp16 = False,
+                word_timestamps = True,
+                beam_size = 5,
+                temperature = 0.0
             )
             
             # Step 2: Speaker diarization

@@ -1,7 +1,7 @@
 import whisper
 import json
 
-def transcribe_audio(input_path: str, output_json: str, model_size: str = "large-v3") -> None:
+def transcribe_audio(input_path: str, output_json: str, model_size: str = "large-v3", temperature: float = 0.0, beam_size: int = 5) -> None:
     """
     Transcribes audio using OpenAI's Whisper model and saves results to JSON.
     
@@ -42,8 +42,8 @@ def transcribe_audio(input_path: str, output_json: str, model_size: str = "large
         language = "ru",
         verbose = False,
         fp16 = False,
-        temperature=0.0,
-        beam_size=5
+        temperature = 0.0,
+        beam_size = 5
     )
     
     # Save results to JSON file with:
